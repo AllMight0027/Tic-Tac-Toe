@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <title>TicTacToe</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap:700" rel="stylesheet">
+        <link rel="icon" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/tic-tac-toe-1996265-1689002.png">
+    </head>
+
+    <style>
+        .btn {
+          background-color: #ddd;
+          border: none;
+          color: black;
+          padding: 10px 22px;
+          text-align: center;
+          font-size: 20px;
+          margin: 4px 2px;
+          transition: 0.3s;
+        }
+        
+        .btn:hover {
+          background-color: #e6400e;
+          color: white;
+        }
+    </style>
+
+    <body> 
+        <div class="container-sm">
+            <div class="row"><div class="col-12"style="text-align: center; font-size: 55px;"> TIC TAC TOE</div> </div>
+        </div>
+        <div class="container-sm">
+            <div class="row"><div class="col-12"style="text-align: center; font-size: 25px;" id="result">Game On!</div> </div>
+        </div>
+        <div class="container-sm" style="background-color: #e6400e; width: 300px; height: 300px; margin-top: 20px;" >
+            <div class="row" style="height: 100px;">
+                <div class="col" style="border-style: solid; font-size: 62px; text-align: center; cursor: pointer; border-right: none; border-bottom: none;" onclick="clicked('b1')">
+                    <div class="cell" style="font-size: 62px;" id="b1" ></div>
+                </div>
+                <div class="col" style="border-style: solid; font-size: 62px; text-align: center; cursor: pointer; border-bottom: none;" onclick="clicked('b2')">
+                    <div class="cell" style="font-size: 62px;" id="b2" ></div>
+                </div>
+                <div class="col" style="border-style: solid; font-size: 62px; text-align: center; cursor: pointer; border-bottom: none; border-left: none;" onclick="clicked('b3')">
+                    <div class="cell" style="font-size: 62px;" id="b3" ></div>
+                </div>
+            </div>
+            <div class="row" style="height: 100px;">
+                <div class="col" style="border-style: solid; font-size: 62px; text-align: center; cursor: pointer; border-right: none; border-bottom: none;" onclick="clicked('b4')">
+                    <div class="cell" style="font-size: 62px;" id="b4" ></div>
+                </div>
+                <div class="col" style="border-style: solid; font-size: 62px; text-align: center; cursor: pointer; border-bottom: none;" onclick="clicked('b5')">
+                    <div class="cell" style="font-size: 62px;" id="b5" ></div>
+                </div>
+                <div class="col" style="border-style: solid; font-size: 62px; text-align: center; cursor: pointer; border-bottom: none; border-left: none;" onclick="clicked('b6')">
+                    <div class="cell" style="font-size: 62px;" id="b6" ></div>
+                </div>
+            </div>
+            <div class="row" style="height: 100px;">
+                <div class="col" style="border-style: solid; font-size: 62px; text-align: center; cursor: pointer; border-right: none;" onclick="clicked('b7')">
+                    <div class="cell" style="font-size: 62px;" id="b7" ></div>
+                </div>
+                <div class="col" style="border-style: solid; font-size: 62px; text-align: center; cursor: pointer;" onclick="clicked('b8')">
+                    <div class="cell" style="font-size: 62px;" id="b8" ></div>
+                </div>
+                <div class="col" style="border-style: solid; font-size: 62px; text-align: center; cursor: pointer; border-left: none;" onclick="clicked('b9')">
+                    <div class="cell" style="font-size: 62px;" id="b9" ></div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 25px;">
+            <button class="btn" onclick="reset() ">RESET</button>
+        </div>
+        <div class="container-sm">
+            <div class="row"><div class="col-12"style="text-align: center; font-size: 15px; margin-top: 20px;"> By Pratyaksh Saxena</div> </div>
+        </div>
+    </body>
+
+    <script src="demo.js"></script>
+</html>
