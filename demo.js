@@ -27,7 +27,7 @@ function check(){
         }
     }
     let draw = !played.includes('');
-    if(draw){
+    if(draw && active){
         document.getElementById("result").innerHTML="Draw!"
         active=false;
     }
